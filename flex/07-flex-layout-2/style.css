@@ -26,3 +26,67 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
 }
+
+/*changes*/
+body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.header {
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 900;
+  /* border: 2px solid red; */
+  padding: 0 16px;
+  
+
+}
+.middle {
+  display: flex;
+ /* border: 5px solid gold; */
+ flex: 1;
+
+}
+.sidebar {
+  flex-shrink: 0;
+  padding: 16px;
+}
+.allCards {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 32px;
+}
+.allCards > * {
+  /* border: 2px solid red; */
+ /* width: 300px; */
+ flex: 1 0 300px; /*make the box grow but not shrink*/
+  padding: 16px;
+  margin: 16px;
+}
+/*next take*/
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  font-size: 24px;
+  color: white;
+  
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.allTheContent {
+  display: flex;
+  flex-direction: column;
+}
+li {
+  margin-bottom: 16px;
+}
